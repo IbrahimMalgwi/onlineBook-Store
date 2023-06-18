@@ -3,12 +3,14 @@ package com.ganzymalgwi.online.bookstore.data.model;
 import com.ganzymalgwi.online.bookstore.data.model.enums.Role;
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 
 @Getter
 @Setter
+@RequiredArgsConstructor
 @Entity
 @Table(name = "users")
 public class User {
