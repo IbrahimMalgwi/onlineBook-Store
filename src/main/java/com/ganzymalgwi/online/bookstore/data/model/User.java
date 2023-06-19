@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -22,6 +23,7 @@ public class User {
     private String userName;
     private String password;
     private BigDecimal amount;
+    private LocalDateTime createTime;
     private Role role;
 
 }
