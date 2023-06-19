@@ -4,6 +4,7 @@ import com.ganzymalgwi.online.bookstore.data.model.User;
 import com.ganzymalgwi.online.bookstore.data.model.enums.Role;
 import com.ganzymalgwi.online.bookstore.repository.UserRepository;
 import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -13,13 +14,13 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 
 @Service
-@NoArgsConstructor
+@RequiredArgsConstructor
 public class UserServiceImpl implements UserService{
     @Autowired
-    private UserService userService;
+    private final UserService userService;
 
     @Autowired
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     private PasswordEncoder passwordEncoder;
 
