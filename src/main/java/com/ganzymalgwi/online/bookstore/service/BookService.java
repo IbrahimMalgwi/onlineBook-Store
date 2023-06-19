@@ -7,8 +7,6 @@ import java.util.List;
 public interface BookService {
     Book saveBok(Book book);
 
-    @
-
     void deleteBook(Long id);
 
     List<Book> findAllBoks();
